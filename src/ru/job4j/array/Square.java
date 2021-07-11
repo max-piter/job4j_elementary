@@ -7,6 +7,7 @@ public class Square {
             rst[i] = i * i;
         }
         return rst;
+
     }
 
     public static void main(String[] args) {
