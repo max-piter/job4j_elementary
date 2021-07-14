@@ -5,14 +5,14 @@ public class Defragment {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
                 int point = index;
-                for (int point2 = index + 1; point2 < array.length; point2++) {
-                    if (array[point2] != null) {
-                        SwitchArray.swapString(array, point, point2);
+                for (int i = index + 1; i < array.length; i++) {
+                    if (array[i] != null) {
+                        array[index] = array[i];
+                        array[i] = null;
                         break;
                     }
                 }
             }
-            System.out.print(array[index] + " ");
         }
         return array;
     }
