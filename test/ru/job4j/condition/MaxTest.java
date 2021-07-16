@@ -33,4 +33,27 @@ public class MaxTest {
         Assert.assertEquals(rsl, expected);
 
     }
+
+    @Test
+    public void when5and6and46and47then47() {
+        int frst = 5;
+        int scd = 6;
+        int thrd  = 46;
+        int frth = 47;
+        int expected = 47;
+        int rsl = Max.max(frst, scd, thrd, frth);
+        Assert.assertEquals(rsl, expected);
+
+    }
+
+    @Test
+    public void whenMinus5and6and46then46() {
+        int frst = -5;
+        int scd = 6;
+        int thrd  = 46;
+        int expected = 46;
+        int rsl = Max.max(frst, scd, thrd);
+        Assert.assertEquals(rsl, expected);
+
+    }
 }
